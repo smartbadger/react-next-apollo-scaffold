@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import breakPoint from '../components/breakpoints'
+import breakPoint from './breakpoints'
 const Normalize = createGlobalStyle`
 html {
   line-height: 1.15;

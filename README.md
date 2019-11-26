@@ -1,9 +1,33 @@
-# Build Process
+# Scaffold Setup
+## Installation
 
-# File Structure
+## Build Process
 
-# Linting
+# Overview
+React, Nextjs, Apollo
+## Use Cases
 
-# Styled-Components
+## File Structure
+### ./public
+#### pages
+#### static
 
-# Theming 
+### ./src
+#### blocks
+#### components
+#### compositions
+#### elements
+#### modifiers
+#### pages
+#### styles
+#### utilities
+
+## Linting
+
+## Styled-Components
+
+## Theming 
+
+## Testing
+
+# Additional Notes
