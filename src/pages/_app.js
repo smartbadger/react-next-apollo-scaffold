@@ -4,6 +4,7 @@ import App from "next/app"
 import fetch from "node-fetch"
 import { ThemeProvider} from "styled-components"
 import Normalize from "../components/normalize"
+import { Grommet } from "grommet"
 // Setup Base Theme 
 import theme from "../components/theme"
 
@@ -29,7 +30,9 @@ class MyApp extends App {
         <ApolloProvider client={client}>
             <Normalize />
             <ThemeProvider theme={theme}>
+              <Grommet theme={theme}>
                 <Component {...pageProps}/>
+              </Grommet>
             </ThemeProvider>
         </ApolloProvider>
     )
