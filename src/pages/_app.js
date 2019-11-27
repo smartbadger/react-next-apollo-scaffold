@@ -3,10 +3,10 @@ import { ApolloProvider } from "react-apollo"
 import App from "next/app"
 import fetch from "node-fetch"
 import { ThemeProvider} from "styled-components"
-import Normalize from "../styles/normalize"
+import Normalize from "../styles/base/normalize"
 import { Grommet } from "grommet"
 // Setup Base Theme 
-import theme from "../styles/theme"
+import theme from "../styles/base/theme"
 theme.mode = "light" // set the theme mode
 
 // Setup the Apollo Client

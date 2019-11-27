@@ -1,6 +1,6 @@
 // components/Layout.js
 import Header from "../header/header";
-import AppLayout from "../../blocks/app-layout"
+import AppLayout from "../../styles/components/app-layout"
 
 const Layout = props => (
     <AppLayout>

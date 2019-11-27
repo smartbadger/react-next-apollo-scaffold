@@ -1,5 +1,5 @@
 import {Button,Box,Heading} from "grommet"
-import CenterBlock from "../../blocks/center-block"
+import CenterBlock from "../../styles/components/center-block"
 const QuickStart = props => {
     return(
         <CenterBlock>
