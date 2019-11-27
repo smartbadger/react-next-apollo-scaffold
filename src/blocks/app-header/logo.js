@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Nav = styled.nav`
+const Logo = styled.img`
     width: 100%;
 `
-export default Nav
+export default Logo

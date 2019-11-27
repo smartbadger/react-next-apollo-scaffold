@@ -1,4 +1,3 @@
-
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 import {Button} from'./quick-start'

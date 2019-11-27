@@ -7,6 +7,7 @@ import Normalize from "../styles/normalize"
 import { Grommet } from "grommet"
 // Setup Base Theme 
 import theme from "../styles/theme"
+theme.mode = "light" // set the theme mode
 
 // Setup the Apollo Client
 const client = new ApolloClient({
