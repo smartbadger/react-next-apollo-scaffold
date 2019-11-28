@@ -6,7 +6,7 @@ import AppLayout from "../../styles/components/app-layout"
 const Layout = props => (
     <AppLayout>
         <Head>
-            <title>Default Page title</title>
+            <title>Yodi Quick Start</title>
         </Head>
         <Header />
         <AppLayout.Main>
