@@ -9,6 +9,9 @@ import { Grommet } from "grommet"
 import theme from "../styles/base/theme"
 theme.mode = "light" // set the theme mode
 
+// Setup a Wrapper Component
+import Layout from "../components/layout/layout"
+
 // Setup the Apollo Client
 const client = new ApolloClient({
     fetchOptions: {
@@ -32,7 +35,9 @@ class MyApp extends App {
             <Normalize />
             <ThemeProvider theme={theme}>
               <Grommet theme={theme}>
-                <Component {...pageProps}/>
+                <Layout>
+                  <Component {...pageProps}/>
+                </Layout>
               </Grommet>
             </ThemeProvider>
         </ApolloProvider>
