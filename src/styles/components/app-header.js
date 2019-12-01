@@ -1,5 +1,8 @@
 import styled from 'styled-components'
-
+import {Heading} from 'grommet'
+const Title = styled.h1`
+  color: ${props => props.theme.global.colors.brand[props.theme.mode]}
+`
 const Logo = styled.img`
   width: auto;
   margin: 0 .5rem;
@@ -20,7 +23,7 @@ const AppHeader = styled.header`
   display: flex;
   padding: 0.25rem;
 `
-
+AppHeader.Title = Heading
 AppHeader.LogoWrapper = LogoWrapper
 AppHeader.Logo = Logo
 

@@ -1,5 +1,3 @@
-import QuickStart from "../components/quick-start/quick-start"
-
 class Index extends React.Component {
   state = {}
   componentDidMount() {
@@ -8,7 +6,7 @@ class Index extends React.Component {
  
   render() {
     return (
-        <QuickStart />
+        <h1>Test</h1>
     )
   }
 }
