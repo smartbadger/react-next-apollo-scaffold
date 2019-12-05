@@ -23,9 +23,16 @@ html {
   
 }
 
-
+*,
+*::after,
+*::before {
+	margin: 0;
+  padding: 0;
+	box-sizing: inherit;
+}
 body {
   margin: 0;
+  box-sizing: inherit;
 }
 main {
   display: block;
@@ -61,9 +68,6 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-small {
-  font-size: 80%;
-}
 sub,
 sup {
   font-size: 75%;
@@ -87,7 +91,7 @@ select,
 textarea {
   font-family: inherit;
   font-size: 100%;
-  line-height: 1.15;
+  line-height: inherit;
   margin: 0;
 }
 button,
@@ -117,9 +121,7 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
+
 legend {
   box-sizing: border-box;
   color: inherit;
@@ -156,15 +158,6 @@ textarea {
 }
 details {
   display: block;
-}
-summary {
-  display: list-item;
-}
-template {
-  display: none;
-}
-[hidden] {
-  display: none;
 }
 `
 

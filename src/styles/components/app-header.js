@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import {Heading} from 'grommet'
-const Title = styled.h1`
-  color: ${props => props.theme.global.colors.brand[props.theme.mode]}
-`
+import colorConvert from "../../services/color-convert"
+
 const Logo = styled.img`
   width: auto;
-  margin: 0 .5rem;
+  margin-left: 0;
+  margin-right: auto;
   height: 100%;
 `
 const LogoWrapper = styled.div`
@@ -16,15 +15,35 @@ const LogoWrapper = styled.div`
 `
 
 const AppHeader = styled.header`
-  background: ${props=> props.theme.global.colors.brand[props.theme.mode]};
+  background: ${props=> colorConvert.rgba(props.theme.global.colors.brand[props.theme.mode], 0.8)};
   width: 100%;
-  position: relative;
   height: 4rem;
   display: flex;
-  padding: 0.25rem;
+  justify-content: space-between;
+  padding: 0.5rem 5%;
+  position: fixed;
+  z-index: 1;
 `
-AppHeader.Title = Heading
+
+const MenuIcon = styled.div`
+
+`
+const Menu = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`
+const MenuText = styled.span`
+  font-size: 2rem;
+  color: white;
+`
+
 AppHeader.LogoWrapper = LogoWrapper
 AppHeader.Logo = Logo
+AppHeader.Menu = Menu
+AppHeader.MenuIcon = MenuIcon
+AppHeader.MenuText = MenuText
+
 
 export default AppHeader

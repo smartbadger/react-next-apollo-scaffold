@@ -159,8 +159,8 @@
       "radius": "15px"
     },
     "padding": {
-      "vertical": "3px",
-      "horizontal": "18px"
+      "vertical": ".5rem",
+      "horizontal": "1rem"
     }
   },
   "checkBox": {
